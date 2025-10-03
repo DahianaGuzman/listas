@@ -1,7 +1,9 @@
-Documentación
-crear_lista.py
+## Documentación
 
-Instrucciones para ejecutar
+## crear_lista.py
+
+
+### Instrucciones para ejecutar
 
 Abre una terminal en la carpeta del proyecto.
 
@@ -23,3 +25,4 @@ Ingrese un número (o "fin" para terminar): fin
 Salida:
 
 Lista creada: [5, 7]
+
