@@ -2,7 +2,7 @@
 
 ### crear_lista.py
 **Instrucciones para ejecutar**  
-```bash
+
 python crear_lista.py
 
 Entrada:
@@ -15,3 +15,4 @@ Ingrese un número (o "fin" para terminar): fin
 
 Salida:
 Tu lista es: [5.0, 7.0]
+
