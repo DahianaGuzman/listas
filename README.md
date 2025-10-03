@@ -34,7 +34,7 @@ maximo = 5
 minimo = 3
 
 
-Posibles Errores:
+# Posibles Errores:
 
 -Si la lista está vacía, puede dar error en promedio, máximo o mínimo.
 -Si hay valores no numéricos, se produce excepción.
@@ -56,6 +56,10 @@ ________________________________________________________________________________
 [1, 2, 3]
 
 
-Posibles Errores:
+# Posibles Errores:
 
 Lista vacía devuelve [].
+
+______________________________________________________________________________________
+
+
