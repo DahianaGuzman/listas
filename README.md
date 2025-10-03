@@ -62,4 +62,30 @@ Lista vacía devuelve [].
 
 ______________________________________________________________________________________
 
+### buscar_elemento.py
+
+**Instrucciones para ejecutar**
+
+
+
+## Entrada:
+
+Lista: [4, 2, 4, 4, 7]
+Valor: 4
+
+
+## Salida:
+
+Posiciones: [0, 2, 3]
+
+
+# Posibles Errores:
+
+Si el valor no está, devuelve lista vacía.
+
+Lista vacía devuelve [].
+
+______________________________________________________________________________________
+
+
 
