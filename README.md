@@ -16,7 +16,7 @@ Ingrese un número (o "fin" para terminar): fin
 ## Salida:
 Tu lista es: [5.0, 7.0]
 
-
+______________________________________________________________________________________
 
 ### operaciones_lista.py
 
@@ -38,3 +38,4 @@ Posibles Errores:
 
 -Si la lista está vacía, puede dar error en promedio, máximo o mínimo.
 -Si hay valores no numéricos, se produce excepción.
+
