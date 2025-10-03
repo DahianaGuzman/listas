@@ -1,5 +1,31 @@
 # Documentación
 
+______________________________________________________________________________________
+
+### buscar_elemento.py
+
+**Instrucciones para ejecutar**
+
+
+
+## Entrada:
+
+Lista: [4, 2, 4, 4, 7]
+Valor: 4
+
+
+## Salida:
+
+Posiciones: [0, 2, 3]
+
+
+# Posibles Errores:
+
+Si el valor no está, devuelve lista vacía.
+
+Lista vacía devuelve [].
+______________________________________________________________________________________
+
 ### crear_lista.py
 **Instrucciones para ejecutar**  
 
@@ -15,6 +41,47 @@ Ingrese un número (o "fin" para terminar): fin
 
 ## Salida:
 Tu lista es: [5.0, 7.0]
+
+______________________________________________________________________________________
+### eliminar_duplicados.py
+
+**Instrucciones para ejecutar**
+
+
+
+## Entrada:
+
+[1,2,3,2,1]
+
+## Salida:
+
+[1, 2, 3]
+
+
+# Posibles Errores:
+
+Lista vacía devuelve [].
+______________________________________________________________________________________
+### fusionar_listas.py
+
+**Instrucciones para ejecutar**
+
+
+## Entrada:
+
+Lista A: [1, 3, 5]
+Lista B: [2, 4, 6]
+
+
+## Salida:
+
+Lista fusionada: [1, 2, 3, 4, 5, 6]
+
+
+# Posibles Errores:
+
+-Si las listas no tienen la misma longitud, puede dar error o fusionar solo hasta la longitud mínima.
+-Si alguna lista está vacía, el resultado será la otra lista.
 
 ______________________________________________________________________________________
 
@@ -41,51 +108,9 @@ minimo = 3
 
 ______________________________________________________________________________________
 
-### eliminar_duplicados.py
-
-**Instrucciones para ejecutar**
 
 
 
-## Entrada:
-
-[1,2,3,2,1]
-
-## Salida:
-
-[1, 2, 3]
-
-
-# Posibles Errores:
-
-Lista vacía devuelve [].
-
-______________________________________________________________________________________
-
-### buscar_elemento.py
-
-**Instrucciones para ejecutar**
-
-
-
-## Entrada:
-
-Lista: [4, 2, 4, 4, 7]
-Valor: 4
-
-
-## Salida:
-
-Posiciones: [0, 2, 3]
-
-
-# Posibles Errores:
-
-Si el valor no está, devuelve lista vacía.
-
-Lista vacía devuelve [].
-
-______________________________________________________________________________________
 
 
 
