@@ -1,29 +1,27 @@
-from typing import List, Tuple
-
-
-def ranking_frecuencias(palabras: List[str]) -> List[Tuple[str, int]]:
-    
-    
-    pares: List[Tuple[str, int]] = []
-    
-    for p in palabras:
-        encontrado = False
-        for i, (pal, cnt) in enumerate(pares):
-            if pal == p:
-                
-                pares[i] = (pal, cnt + 1)
-                encontrado = True
-                break
-       
-        if not encontrado:
-            pares.append((p, 1))
-            
-    pares.sort(key=lambda x: x[1], reverse=True)
-    
-    return pares
-
+# ARCHIVO: ranking_frecuencias.py
+"""
+Versión simple: contar cuántas veces aparece cada palabra
+y mostrar el ranking sin usar funciones.
+"""
 
 if __name__ == '__main__':
     ejemplo = ['manzana', 'pera', 'manzana', 'naranja', 'pera', 'manzana']
     print('Lista de palabras:', ejemplo)
-    print('Ranking de frecuencias:', ranking_frecuencias(ejemplo))
+
+    # Creamos un diccionario vacío
+    conteo = {}
+
+    # Contamos las palabras
+    for palabra in ejemplo:
+        if palabra in conteo:
+            conteo[palabra] += 1
+        else:
+            conteo[palabra] = 1
+
+    # Convertimos a lista de tuplas (palabra, frecuencia)
+    pares = list(conteo.items())
+
+    # Ordenamos por frecuencia de mayor a menor
+    pares.sort(key=lambda x: x[1], reverse=True)
+
+    print('Ranking de frecuencias:', pares)
