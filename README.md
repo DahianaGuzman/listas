@@ -39,3 +39,23 @@ Posibles Errores:
 -Si la lista está vacía, puede dar error en promedio, máximo o mínimo.
 -Si hay valores no numéricos, se produce excepción.
 
+______________________________________________________________________________________
+
+### eliminar_duplicados.py
+
+**Instrucciones para ejecutar**
+
+
+
+## Entrada:
+
+[1,2,3,2,1]
+
+## Salida:
+
+[1, 2, 3]
+
+
+Posibles Errores:
+
+Lista vacía devuelve [].
