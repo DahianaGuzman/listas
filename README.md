@@ -4,6 +4,8 @@ ________________________________________________________________________________
 
 ### buscar_elementos.py
 
+
+
 **Instrucciones para ejecutar**
 
 
@@ -27,6 +29,9 @@ Lista vacía devuelve [].
 ______________________________________________________________________________________
 
 ### crear_lista.py
+
+
+
 **Instrucciones para ejecutar**  
 
 
@@ -43,7 +48,10 @@ Ingrese un número (o "fin" para terminar): fin
 Tu lista es: [5.0, 7.0]
 
 ______________________________________________________________________________________
+
 ### eliminar_duplicados.py
+
+
 
 **Instrucciones para ejecutar**
 
@@ -62,7 +70,10 @@ ________________________________________________________________________________
 
 Lista vacía devuelve [].
 ______________________________________________________________________________________
+
 ### fusionar_listas.py
+
+
 
 **Instrucciones para ejecutar**
 
@@ -88,6 +99,8 @@ ________________________________________________________________________________
 
 ### operaciones_lista.py
 
+
+
 **Instrucciones para ejecutar**
 
 
@@ -112,6 +125,8 @@ ________________________________________________________________________________
 
 ### pares_impares.py
 
+
+
 **Instrucciones para ejecutar**
 
 
@@ -134,7 +149,9 @@ Si está vacía, devuelve dos listas vacías.
 
 ______________________________________________________________________________________
 
-### ranking_frecuencias.py
+### ranking_frecuencia.py
+
+
 
 **Instrucciones para ejecutar**
 
@@ -159,6 +176,8 @@ ________________________________________________________________________________
 
 ### rotar_lista.py
 
+
+
 **Instrucciones para ejecutar**
 
 
@@ -182,6 +201,7 @@ Rotar 8 posiciones a la derecha: [5, 6, 1, 2, 3, 4]
 Si la lista está vacía, devuelve [].
 
 Si la dirección no es 'derecha' ni 'izquierda', lanza ValueError.
+
 
 
 
