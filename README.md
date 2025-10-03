@@ -18,3 +18,23 @@ Tu lista es: [5.0, 7.0]
 
 
 
+### operaciones_lista.py
+
+***Instrucciones para ejecutar***
+
+
+## Entrada:
+Lista de números, por ejemplo [5, 3, 5].
+
+## Salida:
+
+suma = 13
+promedio = 4.33
+maximo = 5
+minimo = 3
+
+
+Posibles Errores:
+
+-Si la lista está vacía, puede dar error en promedio, máximo o mínimo.
+-Si hay valores no numéricos, se produce excepción.
