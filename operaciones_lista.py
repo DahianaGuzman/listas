@@ -1,42 +1,27 @@
 # ARCHIVO: operaciones_lista.py
 """
 Calcular suma, promedio, máximo y mínimo de una lista numérica.
+Versión SIN funciones: toda la lógica está en el bloque principal.
 """
-from typing import Iterable
-
-
-def suma_lista(lst: Iterable[float]) -> float:
-    return sum(lst)
-
-
-def promedio_lista(lst: Iterable[float], decimales: int | None = 2) -> float:
-    l = list(lst)
-    if not l:
-        raise ValueError('La lista está vacía')
-    prom = sum(l) / len(l)
-    if decimales is None:
-        return prom
-    return round(prom, decimales)
-
-
-def maximo_lista(lst: Iterable[float]) -> float:
-    l = list(lst)
-    if not l:
-        raise ValueError('La lista está vacía')
-    return max(l)
-
-
-def minimo_lista(lst: Iterable[float]) -> float:
-    l = list(lst)
-    if not l:
-        raise ValueError('La lista está vacía')
-    return min(l)
-
-
 if __name__ == '__main__':
+    # Cambia esta lista por la que necesites
     ejemplo = [5, 3, 5]
+
+    # Ajusta la cantidad de decimales del promedio (o pon None para no redondear)
+    decimales = 2
     print('Lista:', ejemplo)
-    print('suma =', suma_lista(ejemplo))
-    print('promedio =', promedio_lista(ejemplo))
-    print('maximo =', maximo_lista(ejemplo))
-    print('minimo =', minimo_lista(ejemplo))
+    # Convertir a lista por si el origen es un iterable
+    l = list(ejemplo)
+    if not l:
+        raise ValueError('La lista está vacía')
+    suma = sum(l)
+    if decimales is None:
+        promedio = suma / len(l)
+    else:
+        promedio = round(suma / len(l), decimales)
+    maximo = max(l)
+    minimo = min(l)
+    print('suma =', suma)
+    print('promedio =', promedio)
+    print('maximo =', maximo)
+    print('minimo =', minimo)
