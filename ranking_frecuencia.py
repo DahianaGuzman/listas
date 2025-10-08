@@ -4,24 +4,20 @@ Versión simple: contar cuántas veces aparece cada palabra
 y mostrar el ranking sin usar funciones.
 """
 
-if __name__ == '__main__':
-    ejemplo = ['manzana', 'pera', 'manzana', 'naranja', 'pera', 'manzana']
-    print('Lista de palabras:', ejemplo)
+partitura=["Do","Re","Mi","Do","Fa","Re","Sol","Si","Re","La","Si","Sol","Si"]
+lista_aux=[]
+#lista_final=[]
 
-    # Creamos un diccionario vacío
-    conteo = {}
+print(f"Las notas de la canción son: \n")
 
-    # Contamos las palabras
-    for palabra in ejemplo:
-        if palabra in conteo:
-            conteo[palabra] += 1
-        else:
-            conteo[palabra] = 1
+try:
+    for i in partitura:
+        if i not in lista_aux:#agrega solo los que no estan duplicados
+            lista_aux.append(i)
+            print(f"{i}, esta {partitura.count(i)} veces")
+            #lista_final.append(a)
 
-    # Convertimos a lista de tuplas (palabra, frecuencia)
-    pares = list(conteo.items())
-
-    # Ordenamos por frecuencia de mayor a menor
-    pares.sort(key=lambda x: x[1], reverse=True)
-
-    print('Ranking de frecuencias:', pares)
+    #lista_final.sort()#ordena
+    #print(f"Tu lista final sin repeticiones es: {lista_final}")
+except Exception as e:
+    print(f"Ocurrió un error al procesar la partitura: {e}")
