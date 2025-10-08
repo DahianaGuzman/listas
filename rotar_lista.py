@@ -3,26 +3,27 @@
 Rotar una lista n posiciones a la derecha o a la izquierda, sin funciones.
 """
 
-if __name__ == '__main__':
-    ejemplo = [1, 2, 3, 4, 5, 6]
-    print('Lista original:', ejemplo)
+lista_planetas = ["Mercurio", "Venus", "Tierra", "Marte", "Júpiter", "Saturno", "Urano", "Neptuno"]
 
-    n = 2
-    direccion = 'derecha'
+try:
+    print("¿Hacia que dirección deseas rotar los elementos?\n\n MENÚ: \n 1.Derecha \n 2.Izquierda")
+    direccion=int(input("Ingrese el número del menu: "))
 
-    longitud = len(ejemplo)
-    n = n % longitud  # asegurar que n sea válido
+    print("¿Cuantas posiciones deseas rotar los elementos?")
+    posiciones=int(input("Ingrese el número de posiciones: "))
 
-    if direccion.lower() in ('derecha', 'right'):
-        rotada = ejemplo[-n:] + ejemplo[:-n]
-    elif direccion.lower() in ('izquierda', 'left'):
-        rotada = ejemplo[n:] + ejemplo[:n]
+    print(f"Lista original: {lista_planetas}")
+
+    if direccion == 1:
+      planetas_rotados=lista_planetas[-posiciones:]#segun posición se quitan x elementos del final de la lista (lista [-n:])
+      planetas_rotados+= lista_planetas[:-posiciones]#segun posición se añaden x elementos al inicio de la lista (lista [:-n])
+      print(f"Lista rotada {posiciones} posiciones a la derecha: {planetas_rotados}")
+    elif direccion == 2:
+      planetas_rotados=lista_planetas[posiciones:]#segun posición se quitan x elementos del inicio de la lista (lista [:n])
+      planetas_rotados+=lista_planetas[:posiciones]#segun posición se añaden x elementos al final de la lista  (lista [n:])
+      print(f"Lista rotada {posiciones} posiciones a la izquierda: {planetas_rotados}")
     else:
-        raise ValueError("La dirección debe ser 'derecha'/'izquierda' o 'right'/'left'")
+        print("Dirección no válida. Por favor, ingresa 1 para derecha o 2 para izquierda.")
 
-    print(f"Rotar {n} posiciones a la {direccion}:", rotada)
-
-    # Otro ejemplo: rotar 8 posiciones a la derecha
-    n = 8 % longitud
-    rotada = ejemplo[-n:] + ejemplo[:-n]
-    print("Rotar 8 posiciones a la derecha:", rotada)
+except ValueError:
+    print("Entrada no válida. Por favor, ingresa números enteros para la dirección y las posiciones.")
